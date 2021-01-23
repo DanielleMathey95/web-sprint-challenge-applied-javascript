@@ -1,3 +1,4 @@
+import axios from 'axios';
 const Tabs = (topics) => {
   // TASK 3
   // ---------------------
@@ -13,17 +14,17 @@ const Tabs = (topics) => {
   //   <div class="tab">technology</div>
   // </div>
   //
-  let topicContainer = document.createElement("div");
-  topicContainer.classList.add('topics');
+ let tabs = document.createElement('div');
+ tabs.classList.add('topics');
 
-  topics.forEach(newTopic => {
-    let newTab = document.createElement('div');
-    newTab.classList.add('tab');
-    newTab.textContent = newTopic;
-    topicContainer.appendChild(newTab);
+ topics.forEach(topic => {
+   let tab = document.createElement('div');
+   tab.classList.add('tab');
+   tab.innerText = topic;
+   tabs.append(tab);
+ })
 
-    return topicContainer;
-  })
+ return tabs;
 }
 
 const tabsAppender = (selector) => {
