@@ -14,7 +14,7 @@ const Header = (title, date, temp) => {
     //Creating Elements Here
   const headerContainer = document.createElement("div");
   const dateSpan = document.createElement("span");
-  const title = document.createElement("h1");
+  const titleh1 = document.createElement("h1");
   const temperature = document.createElement("span");
 
     //Classes Applied Here
@@ -29,7 +29,7 @@ const Header = (title, date, temp) => {
 
     //TextContent Here
     dateSpan.textContent = date;
-    title.textContent = title;
+    titleh1.textContent = title;
     temperature.textContent = temp;
 
     return headerContainer;
