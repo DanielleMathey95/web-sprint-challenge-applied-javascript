@@ -24,7 +24,7 @@ const Header = (title, date, temp) => {
 
     //AppendChild Here
     headerContainer.appendChild(dateSpan);
-    headerContainer.appendChild(title);
+    headerContainer.appendChild(titleh1);
     headerContainer.appendChild(temperature);
 
     //TextContent Here
